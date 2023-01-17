@@ -11,10 +11,6 @@
 // 12 closures
 // 13 scope
 
-//***  START - January 13th, Friday ***//
-
-//***  END - January 13th, Thursday ***//
-
 //***  START - January 12th, Thursday ***//
 const fullname = 'nitesh khatri'
 console.log(fullname)
@@ -61,6 +57,4 @@ async function  asyncFunction(){
 
 var a = 5;
 console.log(5);
-
-
 //***  END - January 12th, Thursday ***//
