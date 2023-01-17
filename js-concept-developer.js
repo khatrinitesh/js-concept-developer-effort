@@ -11,6 +11,18 @@
 // 12 closures
 // 13 scope
 
+//***  START - January 17th, Tuesday ***//
+const score = 20;
+let result;
+if(score >= 5){
+    result = 'you have passed the test'
+}
+else{
+    result = 'you have failed the test'
+}
+console.log(score)
+//***  END - January 17th, Tuesday ***//
+
 //***  START - January 12th, Thursday ***//
 const fullname = 'nitesh khatri'
 console.log(fullname)
@@ -57,6 +69,4 @@ async function  asyncFunction(){
 
 var a = 5;
 console.log(5);
-
-
 //***  END - January 12th, Thursday ***//
