@@ -319,4 +319,5 @@ const newData = ['work','exercise',1,true]
 // }
 // const person = new Person()
 // console.log(person.prototype)
+
 //***  END - January 17th, Tuesday ***//
