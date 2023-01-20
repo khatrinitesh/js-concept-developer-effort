@@ -321,3 +321,81 @@ const newData = ['work','exercise',1,true]
 // console.log(person.prototype)
 
 //***  END - January 17th, Tuesday ***//
+
+//***  START - January 20th, Tuesday ***//
+const fullname1 = 'nitesh khatri'
+console.log(fullname1)
+console.log(fullname1.split(' '))
+console.log(fullname1.slice(0,5))
+const assurekitgroup = ['abhijeet','abhisar','gokul','zubair']
+const resultgroup1 = assurekitgroup.sort(function(a,b) {
+    if(a>b) return -1 
+    return 1
+})
+console.log(resultgroup1)
+const resultgroup2 = assurekitgroup.sort(function(a,b) {
+    if(a>b) return 1
+    return -1
+})
+console.log(resultgroup2)
+// const resultgroup3 = assurekitgroup.map((item) => item.toUpperCase())
+// console.log(resultgroup3)
+// const resultgroup4 = assurekitgroup.filter((item) => item !== 'abhijeet')
+// console.log(resultgroup4)
+const resultgroup5 = assurekitgroup.shift((item) => item)
+console.log(resultgroup5)
+const assurekitinsurance = [55,22,11,22,33,44,55]
+const resultassurekitinsurance = [...new Set(assurekitinsurance)]
+console.log(resultassurekitinsurance)
+const result2 = assurekitinsurance.filter(item => item !== 44)
+console.log(result2)
+const result3 = assurekitinsurance.filter(item => item === 44)
+console.log(result3)
+const result4 = assurekitinsurance.findIndex(item => item === 44)
+console.log(result4)
+const result5 = assurekitinsurance.lastIndexOf(item => item === 44)
+console.log(result5)
+const result6 = assurekitinsurance.filter(item => item === 44)
+console.log(result6)
+const result7 = assurekitinsurance.fill(11)
+console.log(result7)
+const result8 = assurekitinsurance.push('glen')
+console.log(result8)
+console.log(assurekitinsurance)
+let numonly = (val) => {
+    if(typeof(val) === 'number'){
+        return val;
+    }
+    let numbers = assurekitinsurance.filter(numonly)
+    console.log(numbers)
+}
+
+var now = new Date();
+var month = now.getMonth()+1;
+console.log(month);
+
+var months = ['January','February','March','April','May',
+              'June','July','August','September',
+              'October','November','December'];
+var now = new Date();
+var monthnew = months[now.getMonth()];
+console.log(monthnew)
+
+var days = ['Sunday','Monday','Tuesday','Wednesday',
+            'Thursday','Friday','Saturday'];
+var now = new Date();
+var dayOfWeek = days[now.getDay()]
+console.log(dayOfWeek)
+
+// var sometime = new Date();
+// var msElapsed = sometime.getTime();
+// console.log(msElapsed)
+
+let iceCream = "chocolate";
+if (iceCream === "chocolate") {
+  alert("Yay, I love chocolate ice cream!");
+} else {
+  alert("Awwww, but chocolate is my favorite…");
+}
+console.log(iceCream)
+//***  END - January 20th, Tuesday ***//
