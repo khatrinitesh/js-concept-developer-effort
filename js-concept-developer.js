@@ -47,33 +47,33 @@
 // operations => assignmet operators / arithmetic operators / comparison operators / logical operators / bitwise operators / string operators / other opeartors 
 
 //***  START - January 12th, Thursday ***//
-const fullname = 'nitesh khatri'
-console.log(fullname)
+// const fullname = 'nitesh khatri'
+// console.log(fullname)
 
-const x = 10;
-const y = 15;
-const z = x+y
-console.log(z);
+// const x = 10;
+// const y = 15;
+// const z = x+y
+// console.log(z);
 
-const friends = ['vijay','rahul','amit','chandresh','rahul']
-const resultfriends = friends.sort(function(a,b){
-    if(a>b) return 1
-    return -1
-})
-console.log(resultfriends);
+// const friends = ['vijay','rahul','amit','chandresh','rahul']
+// const resultfriends = friends.sort(function(a,b){
+//     if(a>b) return 1
+//     return -1
+// })
+// console.log(resultfriends);
 
 // the ternary operator
-const isEnable = false 
-console.log(isEnable ? 'nitesh' : 'sameet')
+// const isEnable = false 
+// console.log(isEnable ? 'nitesh' : 'sameet')
 
 // destructing 
-const objects = ['table','iphone','apple'];
-const [table,...rest] = objects 
+// const objects = ['table','iphone','apple'];
+// const [table,...rest] = objects 
 // const furniture = objects[0]
 // const mobile = objects[1]
 // const fruit = objects[2]
-console.log(table);
-console.log(...rest);
+// console.log(table);
+// console.log(...rest);
 
 // the fetch api
 // const fetchdata = fetch('https://jsonplaceholder.typicode.com/posts')
@@ -82,16 +82,16 @@ console.log(...rest);
 // console.log(fetchdata)
 
 // async / await
-async function  asyncFunction(){
-    let promise = new Promise(resolve => {
-        resolve();
-    });
-    let response = await promise;
-    return console.log(response);
-};
+// async function  asyncFunction(){
+//     let promise = new Promise(resolve => {
+//         resolve();
+//     });
+//     let response = await promise;
+//     return console.log(response);
+// };
 
-var a = 5;
-console.log(5);
+// var a = 5;
+// console.log(5);
 //***  END - January 12th, Thursday ***//
 
 //***  START - January 17th, Tuesday ***//
@@ -215,9 +215,9 @@ console.log(5);
 //     key2:'value2',
 // }
 // console.log(object_name.key1)
-const myArray = ['hello','world','welcome']
+// const myArray = ['hello','world','welcome']
 // console.log(myArray)
-const newData = ['work','exercise',1,true]
+// const newData = ['work','exercise',1,true]
 // console.log(newData)
 // getter
 // const person = {
@@ -322,80 +322,181 @@ const newData = ['work','exercise',1,true]
 
 //***  END - January 17th, Tuesday ***//
 
-//***  START - January 20th, Tuesday ***//
-const fullname1 = 'nitesh khatri'
-console.log(fullname1)
-console.log(fullname1.split(' '))
-console.log(fullname1.slice(0,5))
-const assurekitgroup = ['abhijeet','abhisar','gokul','zubair']
-const resultgroup1 = assurekitgroup.sort(function(a,b) {
-    if(a>b) return -1 
-    return 1
-})
-console.log(resultgroup1)
-const resultgroup2 = assurekitgroup.sort(function(a,b) {
-    if(a>b) return 1
-    return -1
-})
-console.log(resultgroup2)
+//***  START - January 20th, FRIDAY ***//
+// const fullname1 = 'nitesh khatri'
+// console.log(fullname1)
+// console.log(fullname1.split(' '))
+// console.log(fullname1.slice(0,5))
+// const assurekitgroup = ['abhijeet','abhisar','gokul','zubair']
+// const resultgroup1 = assurekitgroup.sort(function(a,b) {
+//     if(a>b) return -1 
+//     return 1
+// })
+// console.log(resultgroup1)
+// const resultgroup2 = assurekitgroup.sort(function(a,b) {
+//     if(a>b) return 1
+//     return -1
+// })
+// console.log(resultgroup2)
 // const resultgroup3 = assurekitgroup.map((item) => item.toUpperCase())
 // console.log(resultgroup3)
 // const resultgroup4 = assurekitgroup.filter((item) => item !== 'abhijeet')
 // console.log(resultgroup4)
-const resultgroup5 = assurekitgroup.shift((item) => item)
-console.log(resultgroup5)
-const assurekitinsurance = [55,22,11,22,33,44,55]
-const resultassurekitinsurance = [...new Set(assurekitinsurance)]
-console.log(resultassurekitinsurance)
-const result2 = assurekitinsurance.filter(item => item !== 44)
-console.log(result2)
-const result3 = assurekitinsurance.filter(item => item === 44)
-console.log(result3)
-const result4 = assurekitinsurance.findIndex(item => item === 44)
-console.log(result4)
-const result5 = assurekitinsurance.lastIndexOf(item => item === 44)
-console.log(result5)
-const result6 = assurekitinsurance.filter(item => item === 44)
-console.log(result6)
-const result7 = assurekitinsurance.fill(11)
-console.log(result7)
-const result8 = assurekitinsurance.push('glen')
-console.log(result8)
-console.log(assurekitinsurance)
-let numonly = (val) => {
-    if(typeof(val) === 'number'){
-        return val;
-    }
-    let numbers = assurekitinsurance.filter(numonly)
-    console.log(numbers)
-}
+// const resultgroup5 = assurekitgroup.shift((item) => item)
+// console.log(resultgroup5)
+// const assurekitinsurance = [55,22,11,22,33,44,55]
+// const resultassurekitinsurance = [...new Set(assurekitinsurance)]
+// console.log(resultassurekitinsurance)
+// const result2 = assurekitinsurance.filter(item => item !== 44)
+// console.log(result2)
+// const result3 = assurekitinsurance.filter(item => item === 44)
+// console.log(result3)
+// const result4 = assurekitinsurance.findIndex(item => item === 44)
+// console.log(result4)
+// const result5 = assurekitinsurance.lastIndexOf(item => item === 44)
+// console.log(result5)
+// const result6 = assurekitinsurance.filter(item => item === 44)
+// console.log(result6)
+// const result7 = assurekitinsurance.fill(11)
+// console.log(result7)
+// const result8 = assurekitinsurance.push('glen')
+// console.log(result8)
+// console.log(assurekitinsurance)
+// let numonly = (val) => {
+//     if(typeof(val) === 'number'){
+//         return val;
+//     }
+//     let numbers = assurekitinsurance.filter(numonly)
+//     console.log(numbers)
+// }
 
-var now = new Date();
-var month = now.getMonth()+1;
-console.log(month);
+// var now = new Date();
+// var month = now.getMonth()+1;
+// console.log(month);
 
-var months = ['January','February','March','April','May',
-              'June','July','August','September',
-              'October','November','December'];
-var now = new Date();
-var monthnew = months[now.getMonth()];
-console.log(monthnew)
+// var months = ['January','February','March','April','May',
+//               'June','July','August','September',
+//               'October','November','December'];
+// var now = new Date();
+// var monthnew = months[now.getMonth()];
+// console.log(monthnew)
 
-var days = ['Sunday','Monday','Tuesday','Wednesday',
-            'Thursday','Friday','Saturday'];
-var now = new Date();
-var dayOfWeek = days[now.getDay()]
-console.log(dayOfWeek)
+// var days = ['Sunday','Monday','Tuesday','Wednesday',
+//             'Thursday','Friday','Saturday'];
+// var now = new Date();
+// var dayOfWeek = days[now.getDay()]
+// console.log(dayOfWeek)
 
 // var sometime = new Date();
 // var msElapsed = sometime.getTime();
 // console.log(msElapsed)
 
-let iceCream = "chocolate";
-if (iceCream === "chocolate") {
-  alert("Yay, I love chocolate ice cream!");
-} else {
-  alert("Awwww, but chocolate is my favorite…");
-}
-console.log(iceCream)
-//***  END - January 20th, Tuesday ***//
+// let iceCream = "chocolate";
+// if (iceCream === "chocolate") {
+//   alert("Yay, I love chocolate ice cream!");
+// } else {
+//   alert("Awwww, but chocolate is my favorite…");
+// }
+// console.log(iceCream)
+//***  END - January 20th, FRIDAY ***//
+
+//***  START - January 24th, Tuesday ***//
+// map and filter
+const DATA = [
+    {id:1,title:'first'},
+    {id:2,title:'second'},
+    {id:3,title:'third'},
+    {id:4,title:'fourth'},
+]
+// const upperData = DATA.map((el) => el.title.toUpperCase())
+// console.log(upperData);
+// console.table(upperData)
+// const moduleData = DATA.filter((el) => el.id % 2 === 0)
+// console.log(moduleData)
+
+// const characterArr = [
+//     'pranay','tejas','swati','mayur','vijay'
+// ]
+// const copyArr = [...characterArr]
+// console.log(copyArr)
+
+// copyArr.slice(0,1)
+// copyArr.splice(copyArr.length,1,'wonder woman')
+// console.log(copyArr)
+
+// const selected = characterArr.slice(0,2)
+// console.log(selected)
+// console.log(characterArr)
+
+// concat => this method returns a new array of merging two or more arrays 
+// const arr1 = [1,2,3,4]
+// const arr2 = [10,20,30,40]
+// const arr3 = [100,200,300,400]
+// const mergedArr = arr1.concat(arr2,arr3)
+// console.log(mergedArr)
+
+// find and findindex = the findmethod returns the first elemeent that satisfies the condition, while findindex returns the index of that element
+// const itemFind = DATA.find((el) => el.id === 2)
+// console.log(itemFind)
+// const itemFindId = DATA.findIndex((el) => el.id === 3)
+// console.log(itemFindId)
+
+// destructing =>  the destructing assignment is a special syntax which enables unpacking assigning values from arrays or object properties directly into variables
+// const name = ['nitesh','sameet']
+// const [fname,lname] = name 
+// console.log(name)
+
+// const jodi = {
+//     id:1,
+//     name:'sachin tendulkar',
+//     lightsaber:true,
+//     species:'human'
+// }
+// const {name:sameet,species,...rest} = jodi 
+// console.log(sameet)
+// console.log(species)
+// console.log(rest)
+
+// reset and spread opartor
+// rest parameter enables us to pass unspecified number of parameters to a function which will be placed into an array while the spread opeartor enables us to spread opeartor the content of a iterable (i.e. array) into individual elements
+// spread
+// const introduction = ['my','name','is','nitesh','khatri']
+// const copyArray = [...introduction]
+// console.log(copyArray)
+// console.log(...copyArray)
+
+// rest opeartor 
+// const getSize = (...args) => {
+//     return args.length
+// }
+// console.log(getSize(1,5,10))
+// console.log(getSize('nitesh','sameet','daddy','mom'))
+
+// promises => in simple terms promises are used to handle asynchronous opeartions. each promise can and as success or failure having 3 possible statues. pending, failure, fulfilled or rejected. In the example below we handle promises with the async await syntaxt while fetching data from API
+// const fetchData = async () => {
+//     try {
+//         const response = await fetch('swapi.dev/api/people');
+//         const result = await response.json()
+//         return result;
+//     }
+//     catch(e){
+//         console.log(e)
+//     }
+// }
+
+// let obj = {
+//     "userId":S,
+//     "id":1,
+//     "title":'nitesh khatri',
+//     "completed":false
+// }
+
+// fetch('https://jsonplaceholder.typicode.com/todos',{
+//     method:'POST',
+//     body:JSON.stringify(obj)
+// }).then((res) => {
+//     return res.json()
+// }).then((data) => {
+//     console.log(data)
+// })
+//***  END - January 24th, Tuesday ***//
