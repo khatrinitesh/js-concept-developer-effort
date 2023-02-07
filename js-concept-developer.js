@@ -47,9 +47,10 @@
 // operations => assignmet operators / arithmetic operators / comparison operators / logical operators / bitwise operators / string operators / other opeartors 
 
 //***  START - february 7th, Tuesday ***//
-const coords = {x: 13, y: 42, z: 8};
-const {x,...rest} = coords 
-console.log(x,rest)
+
+// const coords = {x: 13, y: 42, z: 8};
+// const {x,...rest} = coords 
+// console.log(x,rest)
 // const rectangle = {
 //     width: 10,
 //     height: 20,
