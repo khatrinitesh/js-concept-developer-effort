@@ -46,211 +46,80 @@
 // regular expression (regex)
 // operations => assignmet operators / arithmetic operators / comparison operators / logical operators / bitwise operators / string operators / other opeartors 
 
-//***  START - february 7th, Tuesday ***//
+//***  START - February 15th, Wednesday ***//
+// Deep Cloning Objects in JavaScript, the Modern Way
+// const calendarEvent = {
+//     title: "Builder.io Conf",
+//     date: new Date(123),
+//     attendees: ["Steve"]
+//   }
+//   const copied = structuredClone(calendarEvent)
+//   console.log(copied)
 
-// const coords = {x: 13, y: 42, z: 8};
-// const {x,...rest} = coords 
-// console.log(x,rest)
-// const rectangle = {
-//     width: 10,
-//     height: 20,
-//     x: 5,
-//     y: 5
-// };
-// const {width,height,x,y} = rectangle
-// console.log(width,height,x,y)
-// const site = {domain: 'dev', ext: 'to'};
-// const {domain,ext} = site 
-// console.log(domain,ext)
+//   const kitchenSink = {
+//     set: new Set([1, 3, 3]),
+//     map: new Map([[1, 2]]),
+//     regex: /foo/,
+//     deep: { array: [ new File(someBlobData, 'file.txt') ] },
+//     error: new Error('Hello!')
+//   }
+//   kitchenSink.circular = kitchenSink
+// const clonedSink = structuredClone(kitchenSink)  
+// console.log(clonedSink)
 
-// let article = { 
-//     id: '001', 
-//     title: 'JavaScript Object Destructuring', 
-//     writer: {
-//       name: 'Chameera'
-//     }
-//   };
-//   console.log(article.writer.name);
+// const simpleEvent = {
+//     title: "Builder.io Conf",
+//   }
+//   const shallowCopy = {...calendarEvent}
+//   console.log(shallowCopy)
 
-// const person = { 
-
-//     'name': 'Rahul',
-//     'height': ' 178cm ',
-//     'age': 43
-// }
-// const {height:length,name:fname,age:fage} = person
-// console.log(length,fname,fage)
-// const user = {
-//     rollNumber: 3,
-//     name: 'Rahul',
-//     age: 42,
-//     education: {
-//       degree: 'Masters'
-//     }
-//    };
-// const {education:{degree}} = user 
-// console.log(degree)
-// const person = { 
-
-//     'name': 'Rahul',
-//     'height': ' 178cm ',
-//     'age': 43
-// }
-
-// const {height,name,age} = person;
-// console.log(person)
-// var months = ["January", "February", "March", "April", "May", "June", "July"];
-// var [a,b,...c] = ["January", "February", ...months, "July"];
-// console.log(a)
-// console.log(c)
-// var months = ["January", "February", "March", "April", "May"];
-// const [a,b,c,d,e,f] = months
-// console.log(a,b,c,d,e,f)
-// var months = ["January", "February", "March", "April", "May"]
-// var month1 = months[0]
-// var month4 = months[3]
-// console.log(month1,month4)
-// const obj = {
-//     x:100,
-//     y:true,
-//     z:'hello'
-// }
-// const {x:aa,y:bb,z:cc} = obj 
-// console.log(aa)
-// console.log(bb)
-// console.log(cc)
-// console.log(obj)
-// const student = {
-//     id: 23,
-//     year: "senior",
-// };
-// const {id, year} = student;
-// console.log(id)
-// console.log(year)
-// [num1,num2,num3,num4] = [10,20,30]
-// console.log(num1,'num1')
-// console.log(num2,'num2')
-// console.log(num3,'num3')
-// console.log(num4,'num4')
-// const destructo1 = {
-//     name: 'Bob',
-//     wife: 'Jen',
-//     son: 'Patrick',
-//     daughter: 'Anne',
-//     email: 'bob.fornal@leadingedje.com'
-//   };
-
-//   const destructo6 = Object.assign({},destructo1)
-//   const {email,...destructo7} = destructo6
-//   console.log(email)
-//   console.log(destructo7)
-// const destructo5 = {
-//     name: 'Bob',
-//     wife: 'Jen',
-//     son: 'Patrick',
-//     daughter: 'Anne',
-//     email: 'bob.fornal@leadingedje.com'
-// };
-// delete destructo5.email;
-// console.log(destructo5)
+// const calendarEvent = {
+//     title: "Builder.io Conf",
+//     date: new Date(123),
+//     attendees: ["Steve"]
+//   }
   
-// var emp = {
-//     fname:'nitesh',
-//     lname:'khatri',
-//     dob:'1990'
+//   // 🚩 JSON.stringify converted the `date` to a string
+//   const problematicCopy = JSON.parse(JSON.stringify(calendarEvent))
+//   console.log(problematicCopy)
+
+
+// 4 ways to create object
+// const userA = {
+//     firstName:'nitesh',
+//     lastName:'khatri'
 // }
-// var {fname:fn,lname:ln,dob:d} = emp 
-// console.log(fn)
-// console.log(ln)
-// console.log(d)
-// let options = {
-//     title: "Menu",
-//     width: 100,
-//     height: 200
-// };
-// console.log(options)
-// let [name1,name2,...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"]
-// console.log(name1)
-// console.log(name2)
-// console.log(rest)
-// let guest = 'nitesh'
-// let admin = 'sameet'
-// [guest,admin] = [admin,guest]
-// console.log(`${guest}`)
-// console.log(`${admin}`)
-// let arr = ["John", "Smith"]
-// const [fname,lname] = arr
-// let [fname,lname] = 'nitesh khatri'.split(' ')
-// console.log(fname)
-// console.log(lname) 
-// let firstName = arr[0];
-// let lastName = arr[1];
-// console.log(firstName);
-// console.log(lastName);
-// let [ a,b,c] = 'abc'
-// let [one,two,three] = new Set([1,2,3])
-// console.log('abc')
-// console.log(one)
-// console.log(two)
-// console.log(three)
-// const student = 'abd'
-// const welcomestu = student ? `welcome, ${student}` : 'welcome, guest'
-// console.log(welcomestu)
-// const target = 55;
-// const ach = 56
-// const result = (ach > target) ? 'achievement' : 'not achievement'
-// console.log(result)
-// const score = 45;
-// const scoreRating = score > 75 ? "excellent" : score > 50 ? "average" : score > 40 ? "Fair" : 'Do better'
-// console.log(scoreRating)
-// function Nitesh(){
-//     console.log('this is nitesh')
-//     return 'nitesh'
+// console.log(userA);
+// console.log(userA.firstName);
+
+// const userB = {
+//     firstName:'Sameet',
+//     lastName:'Khatri'
 // }
-// function Sameet(){
-//     console.log('this is sameet')
-//     return 'sameet'
+// console.log(userB)
+
+// function User(){
+//     this.firstName = 'arvind';
+//     this.lastName = 'khatri';
 // }
-// const resultpass = true ;
-// const resultscore = resultpass ? Nitesh() : Sameet()
-// console.log(resultscore)
-// function printPoor(){
-//     console.log('poor result')
-//     return 'poor'
-// }
-// function printSuccess(){
-//     console.log('nice result')
-//     return 'sucess'
-// }
-// const pass = true;
-// const result = pass ? printSuccess() : printPoor()
-// console.log(result)
-// const score = 90;
-// const resultscore = score >= 75  ? 'excellent' : 'not excellent'
-// console.log(resultscore)
-// const score = 100
-// let scoreRating
-// if(score > 80){
-//     scoreRating = 'excellent'
-// }
-// else if(score > 60){
-//     scoreRating = 'very good'
-// }
-// else if(score > 35){
-//     scoreRating = 'average'
-// }
-// else {
-//     scoreRating = 'very bad'
-// }
-// console.log(scoreRating)
-// const age = 33
-// const resultage = age >= 24 ? 'nit' : 'sam'
-// console.log(resultage)
-// function getFree(isMember){
-//     return (isMember ? 'yes' : 'no')
-// }
-// console.log(getFree(null));
-//***  END - february 7th, Tuesday ***//
+// const c = new User();
+// console.log(c);
+// const userD = Object.create(
+//     userA,
+//     {
+//         city:{
+//             value:'asdad',
+//             writable:true,
+//             configurable:false,
+//             enumerable:true
+//         }
+//     }
+// )
+// console.log(userD)
+
+
+
+//***  END - February 15th, Wednesday ***//
 
 //***  START - January 12th, Thursday ***//
 // const fullname = 'nitesh khatri'
