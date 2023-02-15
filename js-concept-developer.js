@@ -47,6 +47,35 @@
 // operations => assignmet operators / arithmetic operators / comparison operators / logical operators / bitwise operators / string operators / other opeartors 
 
 //***  START - February 15th, Wednesday ***//
+// 5 WAYS TO DEFINE FUNCTION
+// // function definition
+// function sumA(a,b){
+//     return a-b 
+// }
+// console.log(sumA(10,10))
+
+// function expression
+// const sumB = function (a,b){
+//     return a+b 
+// }
+// console.log(sumB(10,10))
+
+// arrow function
+// const sumC = (a,b) => {
+//     return a+b 
+// }
+// console.log(sumC(2,20))
+
+// function constructor
+// const sumD = new Function("a","b","return a+b")
+// console.log(sumD(10,101))
+// const sumF = new Function("e","f","return e+f")
+// console.log(sumF(111,111))
+// IIFE FUNCTION IMMEDIATELY INVOKED FUNCTION EXPRESSION
+// console.log(((a,b) => {
+//     return a -b 
+// })(1,2))
+
 // Deep Cloning Objects in JavaScript, the Modern Way
 // const calendarEvent = {
 //     title: "Builder.io Conf",
@@ -477,12 +506,12 @@
 
 //***  START - January 24th, Tuesday ***//
 // map and filter
-const DATA = [
-    {id:1,title:'first'},
-    {id:2,title:'second'},
-    {id:3,title:'third'},
-    {id:4,title:'fourth'},
-]
+// const DATA = [
+//     {id:1,title:'first'},
+//     {id:2,title:'second'},
+//     {id:3,title:'third'},
+//     {id:4,title:'fourth'},
+// ]
 // const upperData = DATA.map((el) => el.title.toUpperCase())
 // console.log(upperData);
 // console.table(upperData)
